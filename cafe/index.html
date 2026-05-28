@@ -128,6 +128,25 @@
   }
   .foot strong{color:var(--text);font-weight:600;}
 
+  /* ---------- Nút Zalo ---------- */
+  .zalo-wrap{margin-top:20px;}
+  .zalo-btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;padding:14px 16px;
+    background:linear-gradient(180deg,#0a8df5,#0068d1);
+    color:#fff;font-family:inherit;font-size:15px;font-weight:700;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;cursor:pointer;text-decoration:none;
+    box-shadow:0 10px 26px rgba(10,141,245,.32);
+    transition:transform .16s ease, box-shadow .16s ease, filter .16s ease;
+  }
+  .zalo-btn:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 14px 32px rgba(10,141,245,.42);}
+  .zalo-btn:active{transform:translateY(0) scale(.99);}
+  .zalo-btn:focus-visible{outline:2px solid #7dc6ff;outline-offset:2px;}
+  .zalo-btn svg{width:22px;height:22px;flex:none;}
+  .zalo-btn .zalo-sub{display:block;font-size:11.5px;font-weight:500;opacity:.85;margin-top:1px;letter-spacing:.01em;}
+  .zalo-btn .zalo-main{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15;}
+
   /* ---------- Hộp QR ---------- */
   .modal{
     position:fixed;inset:0;z-index:50;
@@ -278,6 +297,19 @@
       </span>
     </button>
   </section>
+
+  <!-- ============ NÚT ZALO ============ -->
+  <div class="zalo-wrap">
+    <a class="zalo-btn" href="https://zalo.me/0905113922" target="_blank" rel="noopener" aria-label="Chat Zalo với Nguyễn Văn Mẫn">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2C6.477 2 2 5.94 2 10.8c0 2.79 1.49 5.27 3.82 6.88-.11.43-.5 1.86-.57 2.16-.09.37.13.36.28.27.12-.07 1.9-1.29 2.66-1.8.91.21 1.86.32 2.81.32 5.523 0 10-3.94 10-8.83C22 5.94 17.523 2 12 2z"/>
+      </svg>
+      <span class="zalo-main">
+        <span>Chat Zalo với tôi</span>
+        <span class="zalo-sub">0905 113 922</span>
+      </span>
+    </a>
+  </div>
 
   <p class="foot">
     Thanh toán an toàn qua <strong>VietQR</strong> &middot; <strong>SHB</strong> &middot; napas 247<br>
