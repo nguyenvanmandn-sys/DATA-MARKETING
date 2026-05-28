@@ -1,42 +1,55 @@
-# nguyenvanman.com — source code 3 trang
+# nguyenvanman.com — source code
 
-Repo này tách biệt rõ ràng 3 trang web độc lập. **Khi sửa trang nào chỉ chạm vào thư mục/file của trang đó. Tuyệt đối không sửa chéo.**
+Repo này tách biệt rõ ràng từng trang. **Khi sửa trang nào chỉ chạm vào đúng file của trang đó. Tuyệt đối không sửa chéo.**
 
-## Cấu trúc thư mục
+## Cấu trúc trang
 
-```
-/
-├── index.html              ← Trang chủ:        nguyenvanman.com
-├── cafe/
-│   └── index.html          ← Trang cà phê:     nguyenvanman.com/cafe
-└── shipper/
-    └── index.html          ← Trang shipper:    nguyenvanman.com/shipper
-```
+| URL | File trong repo | Trạng thái |
+| --- | --- | --- |
+| `nguyenvanman.com/` | `index.html` | ✅ có |
+| `nguyenvanman.com/dich-vu.html` | `dich-vu.html` | ✅ có |
+| `nguyenvanman.com/san-pham.html` | `san-pham.html` | ❌ **THIẾU** |
+| `nguyenvanman.com/cafe` | `cafe/index.html` | ✅ có |
+| `nguyenvanman.com/shipper` | `shipper/index.html` | ✅ có |
+
+## Tài nguyên dùng chung (THIẾU trong repo, chỉ có ở máy local)
+
+Các file sau là một phần của deployment thật trên Vercel, chưa được commit vào repo. Cần owner upload từ máy gốc trước khi deploy:
+
+### Ảnh dùng chung (root)
+- `logo-man.png` — favicon + logo header/footer của index, dich-vu, san-pham
+- `logo-man.svg` — fallback nếu PNG lỗi
+- `hero-man.png` + `hero-man.svg` — ảnh chân dung trang chủ
+- `shoptao-team.jpg` — ảnh team trang chủ
+- `story-man.jpg` — ảnh câu chuyện trang chủ
+- `og-image.png` — Open Graph share image trang chủ
+- `shipper-og.png` — Open Graph share image trang shipper
+
+### CSS/JS dùng chung
+- `styles.css` — stylesheet chính của index, dich-vu, san-pham
+- `script.js` — JS chính của các trang trên
+
+### Ảnh riêng của từng trang
+- `cafe/logo.jpg` — avatar trang /cafe
+- `shipper/shipper-hero.png` — ảnh hero trang /shipper
+
+### Serverless function
+- `api/submit.js` (hoặc tương đương) — endpoint xử lý form upload ảnh shipper
 
 ## Quy tắc khi sửa
 
-| Yêu cầu sửa             | Chỉ được sửa file        |
-| ----------------------- | ------------------------ |
-| Trang chủ               | `index.html`             |
-| Trang `/cafe`           | `cafe/index.html`        |
-| Trang `/shipper`        | `shipper/index.html`     |
+| Yêu cầu sửa             | Chỉ được sửa file              |
+| ----------------------- | ------------------------------ |
+| Trang chủ               | `index.html`                   |
+| Trang dịch vụ           | `dich-vu.html`                 |
+| Trang sản phẩm          | `san-pham.html`                |
+| Trang `/cafe`           | `cafe/index.html`              |
+| Trang `/shipper`        | `shipper/index.html`           |
 
-## Tài nguyên đi kèm (KHÔNG có trong repo này, nằm ở máy local của owner)
-
-Các file sau là một phần của deployment thật trên Vercel nhưng chưa được commit vào repo (giữ ở máy gốc, sẽ kèm khi `vercel --prod`):
-
-- `logo-man.png` (favicon dùng chung — cả 3 trang reference qua `../logo-man.png` hoặc `/logo-man.png`)
-- `hero-man.png`, `shoptao-team.jpg`, `story-man.jpg` (trang chủ)
-- `cafe/logo.jpg` (avatar trang /cafe)
-- `shipper/shipper-hero.png`, `shipper-og.png` (trang /shipper)
-- `/api/submit` (serverless function xử lý form shipper)
+CSS/JS dùng chung (`styles.css`, `script.js`) ảnh hưởng tới **index + dich-vu + san-pham**, sửa cẩn thận.
 
 ## Quy trình deploy an toàn
 
-1. Claude sửa file trong repo theo yêu cầu.
-2. Owner pull/copy file đã sửa về máy local (nơi có đầy đủ assets + `/api`).
-3. Owner chạy `vercel --prod` từ máy local để deploy toàn bộ site.
-
-Cách này đảm bảo:
-- Đúng 1 trang bị thay đổi, 2 trang còn lại giữ nguyên bit-for-bit.
-- API và mọi asset gốc không bị mất.
+1. Owner push **toàn bộ source gốc** từ máy (gồm các file ✅ và ❌ ở trên) lên branch `main` của repo này.
+2. Vercel project được kết nối Git với repo → mọi push lên `main` tự deploy.
+3. Khi cần sửa: Claude edit file trên branch riêng, mở PR, preview, merge vào `main` → auto-deploy.
