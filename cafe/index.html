@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mời cà phê — Nguyễn Văn Mẫn | Chuyên gia Apple</title>
+<meta name="description" content="Mời Nguyễn Văn Mẫn — chuyên gia tư vấn & hỗ trợ sản phẩm Apple — một ly cà phê. Quét mã QR VietQR / SHB.">
+<style>
+  :root{
+    --bg-1:#2a2a2d;
+    --bg-2:#1a1a1c;
+    --bg-3:#121213;
+    --surface:#242426;
+    --surface-2:#2e2e31;
+    --border:rgba(255,255,255,.09);
+    --border-strong:rgba(255,255,255,.16);
+    --text:#f5f5f7;
+    --text-dim:#9a9a9f;
+    --gold:#e6b87f;
+    --gold-2:#f3d3a6;
+    --gold-deep:#ca975c;
+    --shadow:0 24px 60px rgba(0,0,0,.55);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(720px 420px at 50% -8%, rgba(230,184,127,.18), transparent 70%),
+      linear-gradient(168deg, var(--bg-1) 0%, var(--bg-2) 52%, var(--bg-3) 100%);
+    background-attachment:fixed;
+    min-height:100%;
+    display:flex;
+    justify-content:center;
+    padding:28px 16px 40px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{width:100%;max-width:460px;}
+
+  /* ---------- Hồ sơ ---------- */
+  .profile{text-align:center;padding:14px 8px 6px;}
+  .avatar{
+    width:128px;height:128px;margin:0 auto 18px;
+    border-radius:50%;
+    padding:4px;
+    background:linear-gradient(145deg,var(--gold-2),var(--gold-deep));
+    box-shadow:0 14px 34px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.05) inset;
+  }
+  .avatar-inner{
+    width:100%;height:100%;border-radius:50%;
+    overflow:hidden;background:var(--surface-2);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .avatar-inner img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transform:scale(1.46);transform-origin:50% 33%;
+  }
+  .avatar-ph{
+    display:flex;flex-direction:column;align-items:center;gap:6px;
+    color:var(--text-dim);text-align:center;padding:8px;
+  }
+  .avatar-ph svg{width:34px;height:34px;opacity:.7;}
+  .avatar-ph span{font-size:11px;line-height:1.3;max-width:90px;}
+
+  .name{font-size:25px;font-weight:700;letter-spacing:-.02em;}
+  .role{
+    margin-top:8px;font-size:14.5px;color:var(--text-dim);
+    max-width:330px;margin-left:auto;margin-right:auto;
+  }
+  .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
+  .chip{
+    font-size:12.5px;font-weight:600;color:var(--gold-2);
+    background:rgba(230,184,127,.10);
+    border:1px solid rgba(230,184,127,.26);
+    padding:6px 13px;border-radius:999px;
+  }
+
+  .divider{
+    height:1px;margin:26px 0 22px;
+    background:linear-gradient(90deg,transparent,var(--border-strong),transparent);
+  }
+
+  /* ---------- Lời mời ---------- */
+  .invite{text-align:center;margin-bottom:20px;}
+  .invite h2{font-size:20px;font-weight:700;letter-spacing:-.01em;}
+  .invite h2 .cup{font-size:21px;}
+  .invite p{margin-top:7px;font-size:13.5px;color:var(--text-dim);}
+
+  /* ---------- Các mức cà phê ---------- */
+  .tiers{display:flex;flex-direction:column;gap:12px;}
+  .tier{
+    position:relative;display:flex;align-items:center;gap:14px;
+    width:100%;text-align:left;cursor:pointer;
+    background:linear-gradient(180deg,var(--surface-2),var(--surface));
+    border:1px solid var(--border);
+    border-radius:18px;padding:16px 16px;
+    color:var(--text);font-family:inherit;
+    transition:transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+  }
+  .tier:hover{transform:translateY(-2px);border-color:var(--border-strong);box-shadow:var(--shadow);}
+  .tier:active{transform:translateY(0) scale(.99);}
+  .tier:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .tier-icon{
+    flex:none;width:48px;height:48px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 35% 30%,rgba(230,184,127,.28),rgba(230,184,127,.08));
+    border:1px solid rgba(230,184,127,.22);
+    font-size:23px;
+  }
+  .tier-body{flex:1;min-width:0;}
+  .tier-title{display:block;font-size:15.5px;font-weight:700;}
+  .tier-desc{display:block;font-size:12.5px;color:var(--text-dim);margin-top:2px;}
+  .tier-right{flex:none;text-align:right;}
+  .tier-price{display:block;font-size:17px;font-weight:800;color:var(--gold);letter-spacing:-.01em;}
+  .tier-go{display:block;font-size:11px;color:var(--text-dim);margin-top:2px;}
+  .tier-tag{
+    position:absolute;top:-9px;right:14px;
+    font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    color:#1a1a1c;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));
+    padding:3px 9px;border-radius:999px;
+  }
+
+  /* ---------- Chân trang ---------- */
+  .foot{
+    margin-top:26px;text-align:center;font-size:12px;color:var(--text-dim);
+  }
+  .foot strong{color:var(--text);font-weight:600;}
+
+  /* ---------- Hộp QR ---------- */
+  .modal{
+    position:fixed;inset:0;z-index:50;
+    display:flex;align-items:center;justify-content:center;padding:18px;
+    background:rgba(8,8,9,.74);backdrop-filter:blur(6px);
+    opacity:0;visibility:hidden;transition:opacity .22s ease,visibility .22s ease;
+  }
+  .modal.open{opacity:1;visibility:visible;}
+  .qr-card{
+    width:100%;max-width:380px;
+    background:linear-gradient(180deg,var(--surface-2),var(--surface));
+    border:1px solid var(--border-strong);
+    border-radius:24px;box-shadow:var(--shadow);
+    padding:20px 20px 22px;
+    transform:translateY(16px) scale(.97);transition:transform .24s cubic-bezier(.2,.8,.2,1);
+    max-height:92vh;overflow-y:auto;
+  }
+  .modal.open .qr-card{transform:translateY(0) scale(1);}
+  .qr-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+  .qr-head h3{font-size:16px;font-weight:700;}
+  .qr-close{
+    flex:none;width:32px;height:32px;border-radius:50%;cursor:pointer;
+    background:rgba(255,255,255,.07);border:1px solid var(--border);
+    color:var(--text);font-size:16px;line-height:1;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .qr-close:hover{background:rgba(255,255,255,.13);}
+
+  .qr-panel{
+    position:relative;background:#fff;border-radius:18px;
+    padding:18px;display:flex;align-items:center;justify-content:center;
+    min-height:240px;
+  }
+  .qr-panel img{width:100%;max-width:268px;display:block;border-radius:6px;}
+  /* Khung góc trang trí */
+  .corner{position:absolute;width:26px;height:26px;border:3px solid var(--gold-deep);}
+  .corner.tl{top:11px;left:11px;border-right:0;border-bottom:0;border-radius:6px 0 0 0;}
+  .corner.tr{top:11px;right:11px;border-left:0;border-bottom:0;border-radius:0 6px 0 0;}
+  .corner.bl{bottom:11px;left:11px;border-right:0;border-top:0;border-radius:0 0 0 6px;}
+  .corner.br{bottom:11px;right:11px;border-left:0;border-top:0;border-radius:0 0 6px 0;}
+  .qr-loading{position:absolute;color:#9a9a9f;font-size:13px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .spinner{
+    width:26px;height:26px;border-radius:50%;
+    border:3px solid #e5e5e5;border-top-color:var(--gold-deep);
+    animation:spin .8s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .qr-amount{text-align:center;margin-top:16px;}
+  .qr-amount .num{font-size:26px;font-weight:800;color:var(--gold);letter-spacing:-.01em;}
+  .qr-amount .lbl{font-size:13px;color:var(--text-dim);margin-top:1px;}
+
+  .bank-box{
+    margin-top:16px;background:rgba(255,255,255,.04);
+    border:1px solid var(--border);border-radius:14px;padding:13px 14px;
+  }
+  .bank-row{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;}
+  .bank-row + .bank-row{margin-top:8px;}
+  .bank-row .k{color:var(--text-dim);flex:none;}
+  .bank-row .v{font-weight:600;text-align:right;}
+  .copy-btn{
+    flex:none;cursor:pointer;font-family:inherit;
+    font-size:11.5px;font-weight:700;color:var(--gold-2);
+    background:rgba(230,184,127,.12);border:1px solid rgba(230,184,127,.3);
+    padding:5px 10px;border-radius:8px;
+  }
+  .copy-btn:hover{background:rgba(230,184,127,.2);}
+  .copy-btn.done{color:#7ee0a5;border-color:rgba(126,224,165,.4);background:rgba(126,224,165,.12);}
+
+  .qr-hint{
+    margin-top:14px;text-align:center;font-size:12px;color:var(--text-dim);
+    display:flex;align-items:center;justify-content:center;gap:6px;
+  }
+  .qr-hint svg{width:15px;height:15px;flex:none;}
+
+  @media (max-width:360px){
+    .name{font-size:22px;}
+    .tier{padding:14px 13px;}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ============ HỒ SƠ ============ -->
+  <header class="profile">
+
+    <!-- Ảnh chân dung: file logo.jpg đặt cùng thư mục với index.html -->
+    <div class="avatar">
+      <div class="avatar-inner">
+        <img src="logo.jpg" alt="Nguyễn Văn Mẫn">
+      </div>
+    </div>
+
+    <h1 class="name">Nguyễn Văn Mẫn</h1>
+    <p class="role">Chuyên gia tư vấn &amp; hỗ trợ sản phẩm, dịch vụ Apple</p>
+    <div class="chips">
+      <span class="chip">iPhone</span>
+      <span class="chip">iPad</span>
+      <span class="chip">MacBook</span>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- ============ LỜI MỜI ============ -->
+  <section class="invite">
+    <h2><span class="cup">☕</span> Mời tôi một ly cà phê</h2>
+    <p>Nếu thấy hữu ích, bạn có thể ủng hộ tôi một ly cà phê. Chọn một mức bên dưới để hiện mã QR.</p>
+  </section>
+
+  <!-- ============ CÁC MỨC ============ -->
+  <section class="tiers">
+    <button class="tier" data-amount="50000" data-title="Ly cà phê" type="button">
+      <span class="tier-icon">☕</span>
+      <span class="tier-body">
+        <span class="tier-title">Ly cà phê</span>
+        <span class="tier-desc">Một lời cảm ơn nho nhỏ</span>
+      </span>
+      <span class="tier-right">
+        <span class="tier-price">50.000đ</span>
+        <span class="tier-go">Hiện mã QR ›</span>
+      </span>
+    </button>
+
+    <button class="tier" data-amount="100000" data-title="Cà phê &amp; bánh" type="button">
+      <span class="tier-tag">Phổ biến</span>
+      <span class="tier-icon">🥐</span>
+      <span class="tier-body">
+        <span class="tier-title">Cà phê &amp; bánh</span>
+        <span class="tier-desc">Tiếp thêm năng lượng</span>
+      </span>
+      <span class="tier-right">
+        <span class="tier-price">100.000đ</span>
+        <span class="tier-go">Hiện mã QR ›</span>
+      </span>
+    </button>
+
+    <button class="tier" data-amount="500000" data-title="Ủng hộ hảo hạng" type="button">
+      <span class="tier-icon">✨</span>
+      <span class="tier-body">
+        <span class="tier-title">Ủng hộ hảo hạng</span>
+        <span class="tier-desc">Sự hào phóng đáng quý</span>
+      </span>
+      <span class="tier-right">
+        <span class="tier-price">500.000đ</span>
+        <span class="tier-go">Hiện mã QR ›</span>
+      </span>
+    </button>
+  </section>
+
+  <p class="foot">
+    Thanh toán an toàn qua <strong>VietQR</strong> &middot; <strong>SHB</strong> &middot; napas 247<br>
+    Cảm ơn bạn đã ghé thăm 💛
+  </p>
+
+</main>
+
+<!-- ============ HỘP MÃ QR ============ -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="qr-card" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+    <div class="qr-head">
+      <h3 id="qrTitle">Mã QR của tôi</h3>
+      <button class="qr-close" id="closeBtn" type="button" aria-label="Đóng">✕</button>
+    </div>
+
+    <div class="qr-panel">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <div class="qr-loading" id="qrLoading"><div class="spinner"></div><span>Đang tạo mã…</span></div>
+      <img id="qrImg" alt="Mã QR chuyển khoản" style="display:none;">
+    </div>
+
+    <div class="qr-amount">
+      <div class="num" id="qrAmount">50.000 VND</div>
+      <div class="lbl" id="qrLabel">Mời cà phê</div>
+    </div>
+
+    <div class="bank-box">
+      <div class="bank-row">
+        <span class="k">Chủ tài khoản</span>
+        <span class="v">NGUYEN VAN MAN</span>
+      </div>
+      <div class="bank-row">
+        <span class="k">Số tài khoản</span>
+        <span class="v" style="display:flex;align-items:center;gap:8px;">
+          2227922279
+          <button class="copy-btn" id="copyBtn" type="button">Sao chép</button>
+        </span>
+      </div>
+      <div class="bank-row">
+        <span class="k">Ngân hàng</span>
+        <span class="v">SHB — Sài Gòn Hà Nội</span>
+      </div>
+    </div>
+
+    <div class="qr-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+        <rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v.01M14 21h.01M21 21v.01M17 21h.01M21 17h.01"/>
+      </svg>
+      Mở app ngân hàng &amp; quét mã để chuyển khoản
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var ACCOUNT = "2227922279";
+  var BANK_BIN = "970443";              // SHB
+  var TEMPLATE = "compact";
+  var ADD_INFO = "Moi Cafe";
+
+  var modal   = document.getElementById("modal");
+  var qrImg   = document.getElementById("qrImg");
+  var qrLoad  = document.getElementById("qrLoading");
+  var qrAmt   = document.getElementById("qrAmount");
+  var closeBtn= document.getElementById("closeBtn");
+  var copyBtn = document.getElementById("copyBtn");
+
+  function formatVND(n){ return n.toLocaleString("vi-VN"); }
+
+  function buildQrUrl(amount){
+    return "https://img.vietqr.io/image/" + BANK_BIN + "-" + ACCOUNT + "-" + TEMPLATE + ".png"
+         + "?amount=" + amount
+         + "&addInfo=" + encodeURIComponent(ADD_INFO)
+         + "&accountName=" + encodeURIComponent("NGUYEN VAN MAN");
+  }
+
+  function openModal(amount){
+    qrAmt.textContent = formatVND(amount) + " VND";
+    qrImg.style.display = "none";
+    qrLoad.style.display = "flex";
+    qrLoad.querySelector("span").textContent = "Đang tạo mã…";
+    qrImg.onload = function(){ qrLoad.style.display = "none"; qrImg.style.display = "block"; };
+    qrImg.onerror = function(){ qrLoad.querySelector("span").textContent = "Không tải được mã. Kiểm tra mạng."; };
+    qrImg.src = buildQrUrl(amount);
+
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal(){
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden","true");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".tier").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal(parseInt(btn.getAttribute("data-amount"),10));
+    });
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  copyBtn.addEventListener("click", function(){
+    var done = function(){
+      copyBtn.textContent = "Đã chép ✓";
+      copyBtn.classList.add("done");
+      setTimeout(function(){ copyBtn.textContent = "Sao chép"; copyBtn.classList.remove("done"); }, 1800);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ACCOUNT).then(done).catch(function(){ window.prompt("Sao chép số tài khoản:", ACCOUNT); });
+    } else {
+      window.prompt("Sao chép số tài khoản:", ACCOUNT);
+    }
+  });
+})();
+</script>
+</body>
+</html>
