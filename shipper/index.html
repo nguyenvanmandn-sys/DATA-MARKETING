@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#1B9C4D">
+<meta name="robots" content="noindex,nofollow">
+<title>Cảm ơn shipper · Shop Táo tặng món quà nhỏ</title>
+<meta name="description" content="Shop Táo Đà Nẵng cảm ơn anh em shipper Grab, Xanh SM, Be, GiaoHang. Để lại đánh giá 5 sao + thông tin để nhận voucher 300K + giảm 20% sửa máy + giảm 30% phụ kiện + nước suối miễn phí.">
+
+<!-- OG tags cho Facebook/Zalo share -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cảm ơn đội ngũ Shipper · Shop Táo Đà Nẵng">
+<meta property="og:description" content="Voucher 300K mua máy + Giảm 20% sửa máy + Giảm 30% phụ kiện + Nước suối miễn phí. Đánh giá 5 sao Google Maps là nhận quà ngay!">
+<meta property="og:url" content="https://nguyenvanman.com/shipper">
+<meta property="og:image" content="https://nguyenvanman.com/shipper-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Shop Táo · Nguyễn Văn Mẫn">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cảm ơn đội ngũ Shipper · Shop Táo Đà Nẵng">
+<meta name="twitter:description" content="Voucher 300K + Giảm 20% sửa máy + Giảm 30% phụ kiện cho anh em shipper Grab, Xanh SM, GiaoHang">
+<meta name="twitter:image" content="https://nguyenvanman.com/shipper-og.png">
+
+<link rel="icon" href="../logo-man.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-grab: #00B14F;
+    --green-dark: #008C3E;
+    --green-deep: #006D30;
+    --xanh-sm: #00B5D8;
+    --orange-be: #FF6B00;
+    --gold: #FFC73D;
+    --cream: #FFFCF2;
+    --text: #1A2E1F;
+    --text-mid: #5A6E5F;
+    --bg-soft: #F0F8F2;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background: linear-gradient(180deg, #E8F7EE 0%, #F0F8F2 60%, #FFFFFF 100%);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px 16px 40px;
+    position: relative;
+  }
+
+  /* === Confetti decorations === */
+  .wrap::before, .wrap::after {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  .wrap::before {
+    top: 8px; left: -10px;
+    width: 50px; height: 50px;
+    background: radial-gradient(circle, var(--gold) 25%, transparent 26%) 0 0/15px 15px;
+  }
+
+  /* === Header === */
+  .top-brand {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 4px 0 16px;
+    position: relative;
+  }
+  .top-brand img {
+    width: 56px; height: 56px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 177, 79, 0.25);
+  }
+  .top-brand .name {
+    font-size: 16px; font-weight: 800;
+    color: var(--green-deep);
+    letter-spacing: 0.04em;
+    margin-top: 8px;
+  }
+  /* Messenger FAB — chat Facebook, fixed góc dưới phải */
+  .msgr-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #00B2FF 0%, #006AFF 50%, #A033FF 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      0 8px 24px rgba(0, 106, 255, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 100;
+    animation: msgrFabPulse 2.4s ease-in-out infinite;
+  }
+  .msgr-fab svg {
+    animation: msgrFabWiggle 2.4s ease-in-out infinite;
+    transform-origin: 50% 60%;
+  }
+  .msgr-fab:hover {
+    transform: scale(1.1);
+  }
+  .msgr-fab:hover svg {
+    animation-play-state: paused;
+  }
+  @keyframes msgrFabPulse {
+    0%, 100% {
+      box-shadow:
+        0 8px 24px rgba(0, 106, 255, 0.45),
+        0 0 0 0 rgba(0, 106, 255, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow:
+        0 10px 28px rgba(0, 106, 255, 0.55),
+        0 0 0 14px rgba(0, 106, 255, 0),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+  }
+  @keyframes msgrFabWiggle {
+    0%, 60%, 100% { transform: rotate(0deg) scale(1); }
+    68% { transform: rotate(-14deg) scale(1.08); }
+    76% { transform: rotate(12deg) scale(1.08); }
+    84% { transform: rotate(-8deg) scale(1.04); }
+    92% { transform: rotate(6deg) scale(1.02); }
+  }
+  @media (max-width: 420px) {
+    .msgr-fab { width: 54px; height: 54px; bottom: 16px; right: 14px; }
+    .msgr-fab svg { width: 24px; height: 24px; }
+  }
+
+  /* === Hero card === */
+  .hero {
+    background: linear-gradient(135deg, var(--green-grab), var(--green-dark));
+    border-radius: 24px;
+    padding: 24px 20px 28px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 109, 48, 0.25);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '🎉';
+    position: absolute;
+    top: 8px; left: 14px;
+    font-size: 22px;
+    opacity: 0.4;
+  }
+  .hero::after {
+    content: '🎁';
+    position: absolute;
+    bottom: 10px; right: 14px;
+    font-size: 26px;
+    opacity: 0.45;
+  }
+  .hero h1 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  }
+  .hero h1 .yellow { color: var(--gold); }
+  .hero p {
+    font-size: 14.5px;
+    font-weight: 500;
+    opacity: 0.96;
+  }
+
+  /* === Hero image (poster) === */
+  .hero-photo {
+    margin: 8px 0 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 36px rgba(0, 109, 48, 0.25);
+    background: #E8F7EE;
+    aspect-ratio: 1086 / 1448;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .hero-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-photo .placeholder {
+    text-align: center;
+    color: var(--green-dark);
+    padding: 30px;
+  }
+  .hero-photo .placeholder .icons {
+    font-size: 56px;
+    margin-bottom: 12px;
+    letter-spacing: 8px;
+  }
+
+  /* === Brand chips (shipper logos) === */
+  .brands {
+    display: flex; justify-content: center; gap: 10px;
+    margin: 16px 0 0;
+    flex-wrap: wrap;
+  }
+  .brand-chip {
+    padding: 6px 12px;
+    background: #fff;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 700;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .brand-chip.grab { color: var(--green-grab); }
+  .brand-chip.xsm { color: var(--xanh-sm); }
+  .brand-chip.be { color: var(--orange-be); }
+  .brand-chip.gh { color: #E04C2B; }
+
+  /* === Gifts list === */
+  .gifts {
+    margin: 22px 0 0;
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px 18px 14px;
+    box-shadow: 0 6px 22px rgba(0, 109, 48, 0.08);
+    border: 1px solid #DCEFE3;
+  }
+  .gifts-title {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--green-deep);
+    margin-bottom: 12px;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .gift-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px dashed #D8EBDF;
+  }
+  .gift-row:last-child { border-bottom: none; }
+  .gift-row .ico {
+    flex-shrink: 0;
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--gold), #F5B221);
+    border-radius: 12px;
+    display: grid; place-items: center;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(245, 178, 33, 0.3);
+  }
+  .gift-row .txt strong {
+    display: block;
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .gift-row .txt span {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.3;
+  }
+
+  /* === How it works (2 bước CLICKABLE) === */
+  .how-it-works {
+    margin: 22px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .how-step {
+    width: 100%;
+    background: #fff;
+    border: 2px solid #DCEFE3;
+    border-radius: 18px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 6px 20px rgba(0, 109, 48, 0.08);
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    text-align: left;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.2s ease,
+                border-color 0.2s ease,
+                background 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  /* Active/pulse state — đang chờ user bấm */
+  .how-step.pulse {
+    border-color: var(--green-grab);
+    box-shadow:
+      0 8px 22px rgba(0, 177, 79, 0.22),
+      0 0 0 0 rgba(0, 177, 79, 0.5);
+    animation: stepPulse 1.8s ease-in-out infinite;
+  }
+  @keyframes stepPulse {
+    0%, 100% {
+      box-shadow:
+        0 8px 22px rgba(0, 177, 79, 0.25),
+        0 0 0 0 rgba(0, 177, 79, 0.5);
+    }
+    50% {
+      box-shadow:
+        0 10px 26px rgba(0, 177, 79, 0.32),
+        0 0 0 12px rgba(0, 177, 79, 0);
+    }
+  }
+  .how-step:active { transform: scale(0.98); }
+  .how-step.pulse:active {
+    animation: none;
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(0, 177, 79, 0.2);
+  }
+  /* Locked state — bước 2 chưa được mở */
+  .how-step.locked {
+    opacity: 0.55;
+    cursor: not-allowed;
+    background: #F4F8F5;
+    border-color: #D8E5DC;
+  }
+  .how-step.locked::after {
+    content: '🔒';
+    position: absolute;
+    top: 8px; right: 12px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  /* Done state — bước đã hoàn thành */
+  .how-step.done {
+    border-color: var(--green-grab);
+    background: linear-gradient(135deg, #E8F7EE 0%, #D7F0E1 100%);
+    box-shadow: 0 6px 18px rgba(0, 177, 79, 0.18);
+    animation: none;
+  }
+  .how-step.done::after {
+    content: '✓';
+    position: absolute;
+    top: 10px; right: 12px;
+    width: 22px; height: 22px;
+    background: var(--green-grab);
+    color: #fff;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0, 177, 79, 0.3);
+  }
+  /* Step 2 reward — vàng khi mở */
+  .how-step.reward {
+    border-color: var(--gold);
+    background: linear-gradient(135deg, #FFFCF2 0%, #FFF1C5 100%);
+    box-shadow:
+      0 10px 28px rgba(255, 199, 61, 0.35),
+      0 0 0 0 rgba(255, 199, 61, 0.5);
+    opacity: 1;
+    cursor: pointer;
+    animation: stepPulseGold 1.6s ease-in-out infinite;
+  }
+  @keyframes stepPulseGold {
+    0%, 100% {
+      box-shadow:
+        0 10px 28px rgba(255, 199, 61, 0.4),
+        0 0 0 0 rgba(255, 199, 61, 0.55);
+    }
+    50% {
+      box-shadow:
+        0 12px 32px rgba(255, 199, 61, 0.5),
+        0 0 0 14px rgba(255, 199, 61, 0);
+    }
+  }
+  .how-step.reward::after { content: none; }
+  .how-num {
+    flex-shrink: 0;
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--green-grab), var(--green-dark));
+    color: #fff;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    box-shadow: 0 4px 10px rgba(0, 177, 79, 0.3);
+  }
+  .how-step.reward .how-num {
+    background: linear-gradient(135deg, var(--gold), #F5B221);
+    color: var(--text);
+    box-shadow: 0 4px 10px rgba(245, 178, 33, 0.35);
+  }
+  .how-step.locked .how-num {
+    background: #B8C9BD;
+    box-shadow: none;
+  }
+  .how-icon {
+    flex-shrink: 0;
+    font-size: 34px;
+    line-height: 1;
+  }
+  .how-step.pulse .how-icon {
+    animation: iconWiggle 1.8s ease-in-out infinite;
+  }
+  @keyframes iconWiggle {
+    0%, 60%, 100% { transform: rotate(0deg); }
+    68% { transform: rotate(-10deg); }
+    76% { transform: rotate(10deg); }
+    84% { transform: rotate(-6deg); }
+    92% { transform: rotate(4deg); }
+  }
+  .how-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .how-text strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.25;
+    margin-bottom: 2px;
+  }
+  .how-text span {
+    display: block;
+    font-size: 12.5px;
+    color: var(--text-mid);
+    line-height: 1.4;
+  }
+  .how-arrow-right {
+    flex-shrink: 0;
+    font-size: 22px;
+    color: var(--green-grab);
+    font-weight: 900;
+    transition: transform 0.25s ease;
+  }
+  .how-step.pulse .how-arrow-right {
+    animation: arrowSlide 1.4s ease-in-out infinite;
+  }
+  .how-step.locked .how-arrow-right { color: #B8C9BD; }
+  .how-step.reward .how-arrow-right { color: #B8810E; }
+  @keyframes arrowSlide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
+  }
+  .how-connect {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 2px;
+    margin: 2px 0;
+  }
+  .how-arrow {
+    font-size: 22px;
+    color: var(--green-grab);
+    font-weight: 800;
+    animation: arrowBounce 1.6s ease-in-out infinite;
+  }
+  .how-hint {
+    font-size: 11.5px;
+    color: var(--text-mid);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+  }
+  .how-step.shake {
+    animation: shakeX 0.4s ease-in-out;
+  }
+  @keyframes shakeX {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-8px); }
+    40%, 80% { transform: translateX(8px); }
+  }
+
+  /* === Step indicator === */
+  .step-bar {
+    display: flex; align-items: center;
+    gap: 8px;
+    margin: 26px 0 14px;
+    padding: 0 4px;
+  }
+  .step-bar .step {
+    flex: 1;
+    height: 6px;
+    background: #D8EBDF;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  .step-bar .step.active {
+    background: var(--green-grab);
+  }
+  .step-bar .step.done {
+    background: var(--green-grab);
+  }
+  .step-bar .step.done::after {
+    content: '✓';
+    position: absolute;
+    right: -2px; top: -10px;
+    color: #fff;
+    background: var(--green-grab);
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0, 177, 79, 0.3);
+  }
+  .step-bar .lbl {
+    font-size: 12.5px;
+    color: var(--text-mid);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* === Step cards === */
+  .step-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 109, 48, 0.1);
+    border: 1px solid #DCEFE3;
+    margin-bottom: 16px;
+  }
+  .step-card .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px;
+    background: var(--green-grab); color: #fff;
+    border-radius: 50%;
+    font-size: 14px; font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .step-card h2 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+  .step-card .lead {
+    font-size: 14px;
+    color: var(--text-mid);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+  /* === Buttons === */
+  .btn {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 14px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn-google {
+    background: linear-gradient(135deg, var(--gold), #F5B221);
+    color: var(--text);
+    box-shadow:
+      0 6px 18px rgba(255, 199, 61, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    animation: btnGlow 2.4s ease-in-out infinite;
+  }
+  .btn-google:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 8px rgba(255, 199, 61, 0.4);
+  }
+  @keyframes btnGlow {
+    0%, 100% {
+      box-shadow:
+        0 6px 18px rgba(255, 199, 61, 0.45),
+        0 0 0 0 rgba(255, 199, 61, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow:
+        0 8px 22px rgba(255, 199, 61, 0.6),
+        0 0 0 14px rgba(255, 199, 61, 0),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+  }
+  .btn-next {
+    background: #fff;
+    color: var(--green-deep);
+    border: 2px solid var(--green-grab);
+    margin-top: 12px;
+  }
+  .btn-next:active { background: #E8F7EE; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--green-grab), var(--green-dark));
+    color: #fff;
+    box-shadow:
+      0 6px 18px rgba(0, 177, 79, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    font-size: 17px;
+  }
+  .btn-primary:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 8px rgba(0, 177, 79, 0.4);
+  }
+  .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  /* === Form === */
+  .form-row { margin-bottom: 14px; }
+  .form-row label {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--green-deep);
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+  }
+  .form-row input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid #CDE3D5;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    background: var(--bg-soft);
+    color: var(--text);
+    caret-color: var(--green-grab);
+    transition: all 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .form-row input::placeholder { color: #9AAEA0; opacity: 1; }
+  .form-row input:focus {
+    outline: none;
+    border-color: var(--green-grab);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(0, 177, 79, 0.12);
+  }
+  .form-row input:-webkit-autofill,
+  .form-row input:-webkit-autofill:hover,
+  .form-row input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--text) !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--bg-soft) inset !important;
+    caret-color: var(--green-grab) !important;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+
+  /* === Upload box === */
+  .upload-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px;
+    padding: 18px 16px !important;
+    background: var(--bg-soft);
+    border: 2px dashed var(--green-grab);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: inherit !important;
+    color: inherit !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    margin: 0 !important;
+  }
+  .upload-box:active {
+    transform: scale(0.98);
+    background: #DCEFE3;
+  }
+  .upload-icon {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    background: var(--green-grab);
+    color: #fff;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    font-size: 22px;
+  }
+  .upload-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .upload-text strong {
+    display: block;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+  .upload-text span {
+    display: block;
+    font-size: 12.5px;
+    color: var(--text-mid);
+    line-height: 1.4;
+  }
+  .upload-preview {
+    margin-top: 4px;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid var(--green-grab);
+    background: #fff;
+  }
+  .upload-preview img {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    background: var(--bg-soft);
+  }
+  .upload-remove {
+    width: 100%;
+    background: var(--green-grab);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .upload-remove:active { background: var(--green-dark); }
+
+  /* === Step states === */
+  #step-success { display: none; }
+  body.success .step-bar, body.success #step-1, body.success #step-2, body.success .hero, body.success .gifts, body.success .brands, body.success .hero-photo, body.success .how-it-works, body.success .step-intro { display: none; }
+  body.success #step-success { display: block; }
+
+  /* === Success === */
+  .success-card {
+    background: linear-gradient(180deg, #fff 0%, #FFF9E5 100%);
+    border-radius: 24px;
+    padding: 28px 22px 24px;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(0, 109, 48, 0.15);
+    border: 2px solid var(--gold);
+    margin-top: 24px;
+  }
+  .success-check {
+    width: 80px; height: 80px;
+    background: linear-gradient(135deg, var(--green-grab), var(--green-dark));
+    color: #fff;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 44px;
+    margin: 0 auto 16px;
+    box-shadow: 0 10px 24px rgba(0, 177, 79, 0.35);
+    animation: pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  @keyframes pop {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+  .success-card h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--green-deep);
+    margin-bottom: 6px;
+  }
+  .success-card .lead {
+    font-size: 14.5px;
+    color: var(--text-mid);
+    margin-bottom: 22px;
+  }
+  .voucher-box {
+    background: #fff;
+    border: 2px dashed var(--gold);
+    border-radius: 16px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+  .voucher-box .label {
+    font-size: 11.5px;
+    color: var(--text-mid);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .voucher-box .code {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--green-deep);
+    letter-spacing: 0.08em;
+    font-family: 'Be Vietnam Pro', monospace;
+    user-select: all;
+    margin: 4px 0 8px;
+  }
+  .voucher-box .copy-btn {
+    background: var(--gold);
+    color: var(--text);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .voucher-box .copy-btn:active { transform: scale(0.95); }
+  .success-instruct {
+    background: var(--bg-soft);
+    border-radius: 12px;
+    padding: 14px;
+    margin-top: 16px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--text);
+    text-align: left;
+  }
+  .success-instruct strong { color: var(--green-deep); }
+
+  /* === Footer === */
+  .foot {
+    text-align: center;
+    padding: 24px 16px 6px;
+    font-size: 12.5px;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+  .foot a {
+    color: var(--green-deep);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  /* === Mobile tweaks === */
+  @media (max-width: 380px) {
+    .hero h1 { font-size: 22px; }
+    .gift-row .txt strong { font-size: 14px; }
+    .step-card h2 { font-size: 17px; }
+    .btn { font-size: 15px; padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="top-brand">
+    <img src="../logo-man.png" alt="Shop Táo" onerror="this.style.display='none'">
+    <div class="name">SHOP TÁO ĐÀ NẴNG</div>
+  </div>
+
+  <div class="hero-photo">
+    <img src="shipper-hero.png" alt="Cảm ơn các shipper Grab Xanh SM GiaoHang"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <div class="placeholder" style="display:none;">
+      <div class="icons">🛵 💚 💙</div>
+      <div style="font-weight:700; font-size:15px;">Grab · Xanh SM · GiaoHang</div>
+    </div>
+  </div>
+
+  <!-- 2 BƯỚC ĐƠN GIẢN — CLICKABLE -->
+  <div class="how-it-works">
+    <a href="https://g.page/r/CSrd6_ltmAzwEBM/review" target="_blank" rel="noopener" class="how-step pulse" id="how-step-1">
+      <div class="how-num">1</div>
+      <div class="how-icon">⭐</div>
+      <div class="how-text">
+        <strong>Bấm để đánh giá Google Maps</strong>
+        <span>Chọn 5 sao cho Shop Táo · 30 giây</span>
+      </div>
+      <div class="how-arrow-right">→</div>
+    </a>
+    <div class="how-connect">
+      <div class="how-arrow">↓</div>
+      <span class="how-hint" id="how-hint">Sau khi đánh giá xong, bấm bước 2</span>
+    </div>
+    <button type="button" class="how-step locked" id="how-step-2">
+      <div class="how-num">2</div>
+      <div class="how-icon">🎁</div>
+      <div class="how-text">
+        <strong>Bấm để nhận 4 quà tặng</strong>
+      </div>
+      <div class="how-arrow-right">→</div>
+    </button>
+  </div>
+
+  <!-- STEP BAR — đã hide, dùng how-it-works ở trên thay -->
+  <div class="step-bar" style="display:none;"></div>
+
+  <!-- STEP 1 card — đã hide, how-step 1 ở trên đã làm thay -->
+  <div class="step-card" id="step-1" style="display:none;"></div>
+
+  <!-- STEP 2: FORM (ẩn ban đầu, hiện khi bấm how-step 2) -->
+  <div class="step-card" id="step-2" style="display:none;">
+    <div class="num">2</div>
+    <h2>Upload ảnh đánh giá + Email</h2>
+    <p class="lead">Chụp lại ảnh đánh giá vừa làm để Shop Táo xác nhận, rồi nhập email nhận voucher liền tay.</p>
+    <form id="shipper-form" novalidate>
+      <!-- Upload ảnh đánh giá -->
+      <div class="form-row">
+        <label for="sh-photo">📸 ẢNH CHỤP MÀN HÌNH ĐÁNH GIÁ</label>
+        <label for="sh-photo" class="upload-box" id="upload-box">
+          <div class="upload-icon">📷</div>
+          <div class="upload-text">
+            <strong>Bấm chọn ảnh hoặc video</strong>
+            <span>Ảnh/video chứng minh đã đánh giá 5 sao (≤ 2.5MB)</span>
+          </div>
+        </label>
+        <input type="file" id="sh-photo" name="photo" accept="image/*,video/*" required style="display:none;">
+        <div class="upload-preview" id="upload-preview" style="display:none;">
+          <img id="preview-img" alt="Ảnh đã chọn" style="display:none;">
+          <video id="preview-video" alt="Video đã chọn" controls playsinline style="display:none; width:100%; max-height:360px; background:#000;"></video>
+          <button type="button" class="upload-remove" id="upload-remove">✕ Đổi file khác</button>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-row">
+        <label for="sh-email">📧 EMAIL NHẬN VOUCHER</label>
+        <input type="email" id="sh-email" name="email" required placeholder="email@example.com" autocomplete="email" inputmode="email">
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="btn-submit">
+        🎁 Nhận quà ngay
+      </button>
+    </form>
+  </div>
+
+  <!-- SUCCESS -->
+  <div id="step-success">
+    <div class="success-card">
+      <div class="success-check">✓</div>
+      <h2 id="success-greet">Cảm ơn anh!</h2>
+      <p class="lead">Đây là mã voucher dành riêng cho anh shipper.</p>
+
+      <div class="voucher-box">
+        <div class="label">MÃ VOUCHER CỦA ANH</div>
+        <div class="code" id="voucher-code">SHIPPER-XXXXXX</div>
+        <button class="copy-btn" id="copy-btn">📋 Sao chép mã</button>
+      </div>
+
+      <div class="success-instruct">
+        📌 <strong>Cách dùng:</strong> Anh em <strong>chụp màn hình lưu lại mã này</strong>, hoặc gửi vào fanpage Shop Táo, hoặc tìm trong hộp thư email để dùng sau:
+        <br>🎁 1 chai nước suối mát lạnh
+        <br>🎁 Voucher 300.000đ mua máy
+        <br>🎁 Giảm 20% sửa máy
+        <br>🎁 Giảm 30% phụ kiện
+        <br><br>📞 Cần hỗ trợ: <a href="tel:0898222277" style="color:var(--green-deep); font-weight:700;">0898 222 277</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    SHOP TÁO · 10 Văn Cao, Đà Nẵng · Hotline <a href="tel:0898222277">0898 222 277</a>
+    <br>Mở cửa 8h-20h · 24/7 · <a href="../index.html">Về trang chủ</a>
+  </div>
+
+</div>
+
+<!-- Messenger FAB — chat Facebook nổi góc dưới phải -->
+<a href="https://m.me/appledanang" target="_blank" rel="noopener" class="msgr-fab" title="Nhắn Messenger Shop Táo" aria-label="Chat Messenger">
+  <svg viewBox="0 0 36 36" width="28" height="28" aria-hidden="true"><path fill="#fff" d="M18 0C8.06 0 0 7.46 0 16.66c0 5.24 2.62 9.91 6.71 12.96V36l6.13-3.37c1.63.45 3.36.7 5.16.7 9.94 0 18-7.46 18-16.66S27.94 0 18 0zm1.79 22.45l-4.58-4.89-8.94 4.89L16.1 11.49l4.69 4.89 8.83-4.89-9.83 10.96z"/></svg>
+</a>
+
+<script>
+(function () {
+  'use strict';
+
+  var step1 = document.getElementById('how-step-1');
+  var step2 = document.getElementById('how-step-2');
+  var hint = document.getElementById('how-hint');
+  var reviewClicked = false;
+
+  // ===== Step 1: User bấm vào card đánh giá Google Maps =====
+  step1.addEventListener('click', function () {
+    reviewClicked = true;
+    // Đổi trạng thái: step 1 done + step 2 unlock
+    setTimeout(function () {
+      step1.classList.remove('pulse');
+      step1.classList.add('done');
+      step1.querySelector('.how-text strong').textContent = 'Đã mở Google Maps đánh giá';
+      step1.querySelector('.how-text span').textContent = 'Chọn 5 sao xong, quay lại bấm bước 2';
+      step2.classList.remove('locked');
+      step2.classList.add('reward');
+      hint.textContent = '👇 Bấm bước 2 để nhận quà';
+      hint.style.color = '#B8810E';
+      hint.style.fontWeight = '800';
+      hint.style.fontStyle = 'normal';
+    }, 200);
+  });
+
+  // ===== Step 2: User bấm vào card nhận quà =====
+  step2.addEventListener('click', function (e) {
+    if (step2.classList.contains('locked')) {
+      e.preventDefault();
+      step1.classList.add('shake');
+      hint.textContent = '⚠️ Bấm bước 1 đánh giá Google Maps trước nhé';
+      hint.style.color = '#C0392B';
+      hint.style.fontWeight = '800';
+      setTimeout(function () { step1.classList.remove('shake'); }, 500);
+      return;
+    }
+    // Mark step 2 done + reveal form
+    step2.classList.remove('reward');
+    step2.classList.add('done');
+    step2.querySelector('.how-text strong').textContent = 'Đang mở form nhận quà...';
+    // Show form (was hidden) + scroll
+    var formCard = document.getElementById('step-2');
+    formCard.style.display = 'block';
+    setTimeout(function () {
+      formCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  });
+
+  // ===== Upload ảnh/video preview + validate =====
+  var photoInput = document.getElementById('sh-photo');
+  var uploadBox = document.getElementById('upload-box');
+  var uploadPreview = document.getElementById('upload-preview');
+  var previewImg = document.getElementById('preview-img');
+  var previewVideo = document.getElementById('preview-video');
+  var uploadRemove = document.getElementById('upload-remove');
+  var MAX_FILE_SIZE = 2.5 * 1024 * 1024; // 2.5MB (sau encode base64 ~3.3MB, an toàn dưới Vercel limit 4.5MB)
+  var photoDataUrl = '';
+  var photoName = '';
+  var photoType = '';
+
+  photoInput.addEventListener('change', function (e) {
+    var file = e.target.files && e.target.files[0];
+    if (!file) return;
+
+    // Validate size — Vercel function body limit là 4.5MB, base64 encode +33% nên raw file phải < 2.5MB
+    if (file.size > MAX_FILE_SIZE) {
+      var mb = (file.size / 1024 / 1024).toFixed(1);
+      alert('⚠️ File quá lớn (' + mb + 'MB). Vui lòng chọn file nhỏ hơn 2.5MB.\n\n💡 Mẹo:\n• Chụp ảnh thường thay vì screenshot full màn hình\n• Nếu là video, quay 3-5 giây thôi\n• Crop ảnh trước khi upload');
+      photoInput.value = '';
+      return;
+    }
+
+    photoName = file.name || ('upload-' + Date.now() + '.' + (file.type.split('/')[1] || 'bin'));
+    photoType = file.type || 'application/octet-stream';
+
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      photoDataUrl = ev.target.result;
+      // Show video player nếu là video, ảnh nếu là ảnh
+      if (photoType.indexOf('video/') === 0) {
+        previewVideo.src = photoDataUrl;
+        previewVideo.style.display = 'block';
+        previewImg.style.display = 'none';
+      } else {
+        previewImg.src = photoDataUrl;
+        previewImg.style.display = 'block';
+        previewVideo.style.display = 'none';
+      }
+      uploadBox.style.display = 'none';
+      uploadPreview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  uploadRemove.addEventListener('click', function () {
+    photoInput.value = '';
+    photoDataUrl = '';
+    photoName = '';
+    photoType = '';
+    previewImg.src = '';
+    previewVideo.src = '';
+    uploadBox.style.display = 'flex';
+    uploadPreview.style.display = 'none';
+  });
+
+  // Form submit
+  var form = document.getElementById('shipper-form');
+  var submitBtn = document.getElementById('btn-submit');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var email = document.getElementById('sh-email').value.trim();
+
+    if (!photoDataUrl) {
+      alert('Anh upload ảnh hoặc video chứng minh đánh giá Google Maps giúp Mẫn nhé');
+      photoInput.click();
+      return;
+    }
+    if (!email) {
+      alert('Anh điền email để Mẫn gửi voucher nhé');
+      document.getElementById('sh-email').focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '⏳ Đang upload + tạo voucher...';
+
+    // Tách base64 khỏi dataURL "data:image/jpeg;base64,xxxx"
+    var base64 = photoDataUrl.split(',')[1] || '';
+
+    var voucherCode = '';
+    var apiError = null;
+    try {
+      var res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'shipper',
+          name: '', phone: '', email: email,
+          file_name: photoName,
+          file_type: photoType,
+          file_base64: base64,
+          source: 'Form Shipper · nguyenvanman.com/shipper'
+        })
+      });
+      var data = await res.json();
+      if (data && data.voucher_code && data.ok) {
+        voucherCode = data.voucher_code;
+      } else {
+        apiError = data || { error: 'Status ' + res.status };
+        console.error('[submit] API error:', apiError);
+      }
+    } catch (err) {
+      apiError = { error: 'Network error', detail: String(err) };
+      console.error('[submit]', err);
+    }
+
+    if (!voucherCode) {
+      // API fail — hiện lỗi thật, không fallback
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '🎁 Nhận quà ngay';
+      var msg = '⚠️ Có lỗi khi gửi đăng ký, vui lòng thử lại sau.\n\n';
+      if (apiError) {
+        msg += 'Chi tiết: ' + JSON.stringify(apiError).substring(0, 300);
+      }
+      msg += '\n\nNếu vẫn lỗi, gọi Mẫn: 0898 222 277';
+      alert(msg);
+      return;
+    }
+
+    document.getElementById('voucher-code').textContent = voucherCode;
+    document.getElementById('success-greet').textContent = 'Cảm ơn anh shipper!';
+    document.body.classList.add('success');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Copy voucher code
+  document.getElementById('copy-btn').addEventListener('click', function () {
+    var code = document.getElementById('voucher-code').textContent;
+    var btn = this;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(code).then(function () {
+        btn.textContent = '✓ Đã sao chép!';
+        setTimeout(function () { btn.textContent = '📋 Sao chép mã'; }, 2000);
+      });
+    } else {
+      var range = document.createRange();
+      range.selectNode(document.getElementById('voucher-code'));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      try {
+        document.execCommand('copy');
+        btn.textContent = '✓ Đã sao chép!';
+        setTimeout(function () { btn.textContent = '📋 Sao chép mã'; }, 2000);
+      } catch (e) {}
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
