@@ -3,7 +3,7 @@ title: Thay Pin iPhone Đà Nẵng Giá Bao Nhiêu, Khi Nào Thì Nên Thay?
 slug: thay-pin-iphone-da-nang
 status: draft
 excerpt: Khi nào nên thay pin iPhone? Bảng giá thay pin iPhone tại Đà Nẵng, cách nhận biết pin chai và lưu ý chọn pin zin để máy bền, chạy ổn định cả ngày.
-categories: Sửa iPhone
+categories: Mẹo vặt
 tags: thay pin iPhone, thay pin iPhone Đà Nẵng, pin iPhone chai
 ---
 <p>Pin chai là vấn đề mọi chiếc iPhone đều gặp sau một thời gian dùng. Máy tụt pin nhanh, sập nguồn dù còn 20–30%, hoặc nóng bất thường là dấu hiệu rõ ràng. Bài viết giúp bạn biết <strong>khi nào nên thay pin iPhone</strong>, giá tham khảo tại Đà Nẵng và cách chọn nơi uy tín.</p>
