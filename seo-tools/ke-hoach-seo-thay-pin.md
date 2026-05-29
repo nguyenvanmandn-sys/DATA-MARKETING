@@ -10,8 +10,8 @@ mỗi bài chuẩn SEO (1 từ khoá chính, H2/H3, ảnh, FAQ ngắn nếu hợ
 | # | Tiêu đề dự kiến | Từ khoá chính | Slug | Trạng thái |
 |---|---|---|---|---|
 | 1 | Thay Pin iPhone 11 Đà Nẵng: Giá Bao Nhiêu, Lấy Ngay | thay pin iphone 11 đà nẵng | thay-pin-iphone-11-da-nang | ✅ đã viết |
-| 2 | Thay Pin iPhone 12 Đà Nẵng: Giá & Địa Chỉ Uy Tín | thay pin iphone 12 đà nẵng | thay-pin-iphone-12-da-nang | ⬜ |
-| 3 | Thay Pin iPhone 13 Đà Nẵng: Bảng Giá, Lấy Liền | thay pin iphone 13 đà nẵng | thay-pin-iphone-13-da-nang | ⬜ |
+| 2 | Thay Pin iPhone 12 Đà Nẵng | thay pin iphone 12 đà nẵng | thay-pin-iphone-12-da-nang | ✅ đã viết |
+| 3 | Thay Pin iPhone 13 Đà Nẵng | thay pin iphone 13 đà nẵng | thay-pin-iphone-13-da-nang | ✅ đã viết |
 | 4 | Thay Pin iPhone 14 Đà Nẵng: Giá Pin Zin, Bảo Hành | thay pin iphone 14 đà nẵng | thay-pin-iphone-14-da-nang | ⬜ |
 | 5 | Thay Pin iPhone 15 Đà Nẵng: Giá & Lưu Ý | thay pin iphone 15 đà nẵng | thay-pin-iphone-15-da-nang | ⬜ |
 | 6 | Thay Pin iPhone X/XR/XS Đà Nẵng: Giá Rẻ, Uy Tín | thay pin iphone x đà nẵng | thay-pin-iphone-x-xr-xs-da-nang | ⬜ |
@@ -21,7 +21,7 @@ mỗi bài chuẩn SEO (1 từ khoá chính, H2/H3, ảnh, FAQ ngắn nếu hợ
 |---|---|---|---|---|
 | 7 | 8 Dấu Hiệu iPhone Cần Thay Pin Không Nên Bỏ Qua | dấu hiệu iphone cần thay pin | dau-hieu-iphone-can-thay-pin | ✅ đã viết |
 | 8 | Cách Kiểm Tra Độ Chai Pin iPhone (Battery Health) | cách kiểm tra chai pin iphone | cach-kiem-tra-chai-pin-iphone | ✅ đã viết |
-| 9 | iPhone Bao Nhiêu % Pin Thì Nên Thay? | iphone bao nhiêu phần trăm thì thay pin | iphone-bao-nhieu-phan-tram-thi-thay-pin | ⬜ |
+| 9 | iPhone Pin Dưới 80% Có Nên Thay Ngay | pin iphone dưới 80% | iphone-pin-duoi-80-co-nen-thay | ✅ đã viết |
 | 10 | Pin iPhone Zin Và Pin Dung Lượng Cao Khác Gì? | pin iphone zin | pin-iphone-zin-va-dung-luong-cao | ⬜ |
 | 11 | iPhone Phồng Pin: Nguyên Nhân, Nguy Hiểm & Xử Lý | iphone phồng pin | iphone-phong-pin-cach-xu-ly | ⬜ |
 | 12 | Thay Pin iPhone Có Mất Dữ Liệu, Mất Chống Nước? | thay pin iphone có mất dữ liệu | thay-pin-iphone-co-mat-du-lieu | ⬜ |
