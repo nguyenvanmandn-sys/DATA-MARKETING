@@ -40,7 +40,22 @@ python3 publish_wp.py articles/cach-chon-mua-iphone-cu-da-nang.md
 
 # Đăng PUBLIC ngay
 python3 publish_wp.py articles/cach-chon-mua-iphone-cu-da-nang.md --publish
+
+# Đăng HÀNG LOẠT: truyền nhiều file, hoặc cả thư mục
+python3 publish_wp.py articles/                      # tất cả bài trong thư mục (nháp)
+python3 publish_wp.py articles/a.md articles/b.md    # vài bài cụ thể
 ```
+
+## Các bài SEO đã viết sẵn (đăng dạng nháp)
+
+| File | Chủ đề |
+|---|---|
+| `cach-chon-mua-iphone-cu-da-nang.md` | Kinh nghiệm mua iPhone cũ |
+| `thay-pin-iphone-da-nang.md` | Dịch vụ thay pin iPhone |
+| `thay-man-hinh-iphone-da-nang.md` | Dịch vụ thay màn hình iPhone |
+| `phan-biet-iphone-chinh-hang-va-hang-dung.md` | Phân biệt máy thật / máy dựng |
+| `mua-iphone-tra-gop-da-nang.md` | Mua iPhone trả góp |
+| `sua-macbook-da-nang.md` | Dịch vụ sửa MacBook |
 
 ## Viết bài mới
 

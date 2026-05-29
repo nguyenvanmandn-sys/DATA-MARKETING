@@ -123,6 +123,21 @@ def resolve_terms(site, user, pw, taxonomy, names):
 
 # ------------------------- Đọc file bài viết ------------------------------- #
 
+def collect_files(paths):
+    """Mở rộng danh sách đường dẫn: thư mục -> mọi file .md/.html bên trong."""
+    out = []
+    for p in paths:
+        if os.path.isdir(p):
+            for name in sorted(os.listdir(p)):
+                if name.endswith((".md", ".html")):
+                    out.append(os.path.join(p, name))
+        elif os.path.isfile(p):
+            out.append(p)
+        else:
+            sys.exit(f"Không tìm thấy: {p}")
+    return out
+
+
 def parse_article(path):
     """Tách front matter (giữa hai dòng ---) và thân bài HTML."""
     with open(path, encoding="utf-8") as fh:
@@ -166,7 +181,8 @@ def build_payload(site, user, pw, meta, body, force_status=None):
 
 def main():
     ap = argparse.ArgumentParser(description="Đăng bài SEO lên WordPress.")
-    ap.add_argument("article", nargs="?", help="đường dẫn file bài viết (.md/.html)")
+    ap.add_argument("article", nargs="*",
+                    help="một hoặc nhiều file bài viết, hoặc thư mục chứa bài")
     ap.add_argument("--publish", action="store_true",
                     help="đăng public ngay (mặc định đăng nháp)")
     ap.add_argument("--dry-run", action="store_true",
@@ -185,32 +201,38 @@ def main():
         return
 
     if not args.article:
-        ap.error("cần truyền đường dẫn file bài viết (hoặc dùng --check).")
+        ap.error("cần truyền file/thư mục bài viết (hoặc dùng --check).")
 
-    meta, body = parse_article(args.article)
+    files = collect_files(args.article)
+    if not files:
+        sys.exit("Không tìm thấy file bài viết nào (.md/.html).")
     force_status = "publish" if args.publish else None
 
     if args.dry_run:
-        # Dry-run: không resolve tag/category (cần mạng), chỉ xem cơ bản.
-        preview = {
-            "title": meta["title"],
-            "status": force_status or meta.get("status", "draft"),
-            "slug": meta.get("slug", "(tự sinh)"),
-            "excerpt": meta.get("excerpt", ""),
-            "categories": meta.get("categories", ""),
-            "tags": meta.get("tags", ""),
-            "content_chars": len(body),
-        }
-        print(json.dumps(preview, ensure_ascii=False, indent=2))
+        for path in files:
+            meta, body = parse_article(path)
+            preview = {
+                "file": path,
+                "title": meta["title"],
+                "status": force_status or meta.get("status", "draft"),
+                "slug": meta.get("slug", "(tự sinh)"),
+                "excerpt": meta.get("excerpt", ""),
+                "categories": meta.get("categories", ""),
+                "tags": meta.get("tags", ""),
+                "content_chars": len(body),
+            }
+            print(json.dumps(preview, ensure_ascii=False, indent=2))
         return
 
     site, user, pw = get_config()
-    payload = build_payload(site, user, pw, meta, body, force_status)
-    result = api(site, user, pw, "posts", method="POST", payload=payload)
-    print(f"Đã tạo bài (id={result['id']}, status={result['status']})")
-    print(f"Xem/sửa: {site}/wp-admin/post.php?post={result['id']}&action=edit")
-    if result.get("link"):
-        print(f"Link bài: {result['link']}")
+    for path in files:
+        meta, body = parse_article(path)
+        payload = build_payload(site, user, pw, meta, body, force_status)
+        result = api(site, user, pw, "posts", method="POST", payload=payload)
+        print(f"[{path}] đã tạo bài id={result['id']}, status={result['status']}")
+        print(f"  Sửa: {site}/wp-admin/post.php?post={result['id']}&action=edit")
+        if result.get("link"):
+            print(f"  Link: {result['link']}")
 
 
 if __name__ == "__main__":
