@@ -3,7 +3,7 @@ title: Thay Màn Hình iPhone Đà Nẵng Giá Bao Nhiêu? Zin Khác OLED Sao?
 slug: thay-man-hinh-iphone-da-nang
 status: draft
 excerpt: Hướng dẫn thay màn hình iPhone tại Đà Nẵng: cách phân biệt màn zin và màn lô, các loại OLED/Incell, giá tham khảo và mẹo nhận biết màn ép kính kém chất lượng.
-categories: Sửa chữa
+categories: Mẹo vặt
 tags: thay màn hình iPhone, màn hình iPhone Đà Nẵng, màn zin iPhone
 ---
 <p>Màn hình vỡ, sọc, đốm hay liệt cảm ứng là sự cố phổ biến với iPhone. Tuy nhiên thị trường có nhiều loại màn với chất lượng và giá rất khác nhau. Bài viết giúp bạn hiểu rõ để <strong>thay màn hình iPhone tại Đà Nẵng</strong> đúng loại, đúng giá.</p>
