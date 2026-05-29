@@ -1,5 +1,5 @@
 ---
-title: Mua iPhone Trả Góp Đà Nẵng: Thủ Tục, Lãi Suất Và Lưu Ý Quan Trọng
+title: iPhone Trả Góp Đà Nẵng: Cần Giấy Tờ Gì, Lãi Suất Bao Nhiêu?
 slug: mua-iphone-tra-gop-da-nang
 status: draft
 excerpt: Hướng dẫn mua iPhone trả góp tại Đà Nẵng: điều kiện, thủ tục cần giấy tờ gì, các hình thức trả góp 0% và lưu ý để không phát sinh chi phí ẩn.

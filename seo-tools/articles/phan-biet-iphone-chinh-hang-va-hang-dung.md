@@ -1,5 +1,5 @@
 ---
-title: Cách Phân Biệt iPhone Chính Hãng Và iPhone Dựng (Hàng Lô) Năm 2026
+title: 6 Cách Nhận Biết iPhone Chính Hãng Và Hàng Dựng Trong 5 Phút
 slug: phan-biet-iphone-chinh-hang-va-hang-dung
 status: draft
 excerpt: 6 cách phân biệt iPhone chính hãng và iPhone dựng: kiểm tra IMEI, số linh kiện, độ hoàn thiện, phần mềm và bảo hành — giúp bạn không mua nhầm hàng lô.

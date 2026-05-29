@@ -1,5 +1,5 @@
 ---
-title: Sửa MacBook Đà Nẵng: Các Lỗi Thường Gặp Và Cách Xử Lý
+title: Sửa MacBook Đà Nẵng Ở Đâu Uy Tín? Lỗi Thường Gặp & Bảng Giá
 slug: sua-macbook-da-nang
 status: draft
 excerpt: Tổng hợp các lỗi MacBook thường gặp tại Đà Nẵng: không lên nguồn, chai pin, lỗi bàn phím, nóng máy, vào nước và cách chọn nơi sửa MacBook uy tín, có bảo hành.

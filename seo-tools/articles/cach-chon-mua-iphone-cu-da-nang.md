@@ -1,5 +1,5 @@
 ---
-title: Cách Chọn Mua iPhone Cũ Tại Đà Nẵng Không Lo Bị Hớ (2026)
+title: Mua iPhone Cũ Đà Nẵng: 7 Bước Kiểm Tra Tránh Mua Hớ (2026)
 slug: cach-chon-mua-iphone-cu-da-nang
 status: draft
 excerpt: Hướng dẫn chi tiết cách chọn mua iPhone cũ tại Đà Nẵng: kiểm tra pin, iCloud, màn hình, linh kiện zin và mẹo tránh máy dựng giúp bạn mua được máy tốt, giá hợp lý.
