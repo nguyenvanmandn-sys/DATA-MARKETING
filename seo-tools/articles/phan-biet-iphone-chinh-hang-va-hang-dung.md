@@ -3,7 +3,7 @@ title: 6 Cách Nhận Biết iPhone Chính Hãng Và Hàng Dựng Trong 5 Phút
 slug: phan-biet-iphone-chinh-hang-va-hang-dung
 status: draft
 excerpt: 6 cách phân biệt iPhone chính hãng và iPhone dựng: kiểm tra IMEI, số linh kiện, độ hoàn thiện, phần mềm và bảo hành — giúp bạn không mua nhầm hàng lô.
-categories: Mẹo vặt
+categories: Sửa iPhone
 tags: iPhone dựng, iPhone chính hãng, kiểm tra iPhone
 ---
 <p>iPhone dựng (hàng lô) là máy được lắp ráp lại từ nhiều linh kiện, vỏ và bo mạch khác nhau, bề ngoài rất giống máy thật. Mua nhầm máy dựng đồng nghĩa máy nhanh hỏng, mất giá. Dưới đây là <strong>6 cách phân biệt iPhone chính hãng và hàng dựng</strong>.</p>
