@@ -8,7 +8,7 @@ tags: thay kính lưng iPhone 12, thay kính lưng iPhone 12 Đà Nẵng, thay m
 ---
 <p><strong>Thay kính lưng iPhone 12 lấy ngay tại Đà Nẵng</strong> là dịch vụ được nhiều khách hàng tìm khi mặt lưng máy bị nứt, vỡ hoặc trầy. Là đơn vị chuyên Apple nhiều năm tại Đà Nẵng, <strong>Shop Táo</strong> đã trực tiếp ép kính lưng cho hàng nghìn chiếc iPhone 12 bằng <strong>máy laser tách kính, không tháo máy</strong> — máy giữ zin, đẹp như nguyên bản và lấy liền trong 30–60 phút.</p>
 
-<figure class="wp-block-image size-large"><img src="https://danangmobile.com/wp-content/uploads/2025/04/13-prm-trang.webp" alt="Thay kính lưng iPhone 12 lấy ngay tại Đà Nẵng"/><figcaption>Kính lưng iPhone 12 sau khi thay – zin, sắc nét, đẹp như mới (ảnh minh hoạ).</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://danangmobile.com/wp-content/uploads/2026/07/thay-kinh-lung-iphone-12-lay-ngay.jpg" alt="Thay kính lưng iPhone 12 lấy ngay tại Đà Nẵng - Shop Táo"/><figcaption>iPhone 12 vỡ kính lưng – trường hợp thực tế khách mang đến Shop Táo thay kính lưng lấy ngay tại Đà Nẵng.</figcaption></figure>
 
 <h2>Khi nào cần thay kính lưng iPhone 12?</h2>
 <p>Từ kinh nghiệm sửa chữa thực tế, chúng tôi khuyên bạn nên thay kính lưng iPhone 12 khi:</p>
