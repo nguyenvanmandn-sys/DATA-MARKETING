@@ -20,7 +20,7 @@ tags: thay bàn phím MacBook Đà Nẵng, vệ sinh bàn phím MacBook, MacBook
 <li><strong>Bụi, vụn nhỏ lọt khe phím:</strong> cơ cấu phím MacBook rất mỏng, hành trình ngắn, một hạt vụn kẹt bên dưới là phím kẹt hoặc chết. Đời phím cánh bướm 2016 đến 2019 đặc biệt nhạy.</li>
 <li><strong>Hơi ẩm, mồ hôi tay lâu ngày</strong> oxy hóa tiếp điểm, phím lúc ăn lúc không.</li>
 <li><strong>Ăn mòn sau khi dính nước:</strong> nước ngọt, cà phê để lại cặn dẫn điện, gây chạm giữa các phím, gõ một ra hai chữ.</li>
-<li><strong>Cáp bàn phím hoособ mạch phím lỗi:</strong> thường liệt cả hàng, cả vùng phím.</li>
+<li><strong>Cáp bàn phím hoặc mạch phím lỗi:</strong> thường liệt cả hàng, cả vùng phím.</li>
 </ol>
 <p>Nguyên nhân 1 và 2 phần lớn chỉ cần <strong>vệ sinh bàn phím MacBook</strong> đúng cách. Nguyên nhân 3 và 4 mới phải can thiệp sâu.</p>
 
