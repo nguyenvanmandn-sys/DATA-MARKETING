@@ -10,7 +10,7 @@ tags: MacBook không đăng nhập được, mật khẩu MacBook, sửa MacBook
 <figure class="wp-block-image size-large"><img src="https://danangmobile.com/wp-content/uploads/2026/08/macbook-nhap-mat-khau-dung-ma-bao-sai-da-nang.jpg" alt="MacBook nhập mật khẩu đúng mà báo sai - kiểm tra tại Shop Táo Đà Nẵng" width="1254" height="1254"/><figcaption>MacBook gõ mật khẩu đúng mà báo sai – đừng vội cài lại máy.</figcaption></figure>
 
 <h2>Chuyện quen ở quầy: "chắc em cài lại quá"</h2>
-<p>Có một kiểu khách rất quen. Mang máy tới, mặt buồn thiu: máy đòi mật khẩu mà em gõ đúng nó vẫn báo sai, chắc em cài lại quá. Trong máy là ảnh con, file làm việc, cả năm dữ liệu. Shop kiểm tra, hóa ra <strong>phím Shift bị chạm, hoособ bộ gõ tiếng Việt đang bật</strong>. Xử lý xong, đăng nhập bình thường, không mất một file nào.</p>
+<p>Có một kiểu khách rất quen. Mang máy tới, mặt buồn thiu: máy đòi mật khẩu mà em gõ đúng nó vẫn báo sai, chắc em cài lại quá. Trong máy là ảnh con, file làm việc, cả năm dữ liệu. Shop kiểm tra, hóa ra <strong>phím Shift bị chạm, hoặc bộ gõ tiếng Việt đang bật</strong>. Xử lý xong, đăng nhập bình thường, không mất một file nào.</p>
 <p><strong>Nếu bạn đang ở đúng tình huống đó, khoan quyết định.</strong> Cài lại là mất sạch dữ liệu, mà phần lớn ca này không cần cài lại.</p>
 
 <h2>3 nguyên nhân ít ai ngờ khiến MacBook không đăng nhập được</h2>
