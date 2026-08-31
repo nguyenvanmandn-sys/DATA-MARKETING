@@ -87,7 +87,7 @@ người dùng bằng **tiếng Việt**, xưng "em", gọi chủ shop là "anh"
    claude/optimistic-fermat-mOUtg)
 - `git push` trực tiếp thường HỎNG (proxy git không cấp credential). Cách chuẩn:
   1) `git add` + `git commit` local; 2) đẩy file lên GitHub bằng **MCP tool**
-  `mcp__github__create_or_update_file` (hoособ `push_files`) — nội dung copy ĐÚNG từ file
+  `mcp__github__create_or_update_file` (hoặc `push_files`) — nội dung copy ĐÚNG từ file
   gốc (blob sha trả về phải khớp `git rev-parse HEAD:<path>`, nếu khác là gõ sai, sửa lại);
   3) `git fetch origin <nhánh>` rồi `git reset --hard origin/<nhánh>` để đồng bộ local
   (unpushed = 0, working tree sạch — tránh stop-hook cảnh báo).
