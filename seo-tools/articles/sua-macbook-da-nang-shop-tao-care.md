@@ -17,7 +17,7 @@ tags: sửa MacBook Đà Nẵng, sửa main MacBook, thay pin MacBook, thay màn
 <li>🔧 <strong>Sửa Mainboard</strong>, lỗi nguồn và chạm mạch</li>
 <li>🔧 Thay pin, bàn phím, Trackpad, cổng sạc</li>
 <li>🔧 <strong>Thay màn hình MacBook Air, MacBook Pro</strong></li>
-<li>🔧 Xử lý máy nóng, chạy ch="chậm, treo hoặc tự khởi động lại</li>
+<li>🔧 Xử lý máy nóng, chạy chậm, treo hoặc tự khởi động lại</li>
 <li>🔧 Cài đặt macOS, phần mềm và sao lưu dữ liệu</li>
 <li>🔧 Vệ sinh, bảo dưỡng và thay keo tản nhiệt</li>
 </ul>
