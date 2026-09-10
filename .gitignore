@@ -1,0 +1,7 @@
+# Bí mật — không bao giờ commit khóa thật
+seo-tools/.env
+.env
+
+# Python
+__pycache__/
+*.pyc
